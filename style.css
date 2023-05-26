@@ -40,7 +40,13 @@ main {
     margin: 0 auto;
 }
 
-
+@media screen and (min-width: 1439px) {
+    .responsive{
+        display: inline-block;
+        width: 70%;
+        margin: 0;
+    }
+}
 /* Area de escritura */
 
 
@@ -146,6 +152,10 @@ button:active {
     background-color: #FFFFFF;
 }
 
+.resultado img {
+    display: none;
+}
+
 .resultado-incompleto{
     margin: 20px 10px;
 }
@@ -200,4 +210,59 @@ button:active {
     .boton-copiar:active{
         transform: scale(0.75);
     }
+}
+
+@media screen and (min-width: 1439px) {
+    .resultado{
+        display: inline-block;
+        position: absolute;
+        margin: 50px 0 40px;
+        width: 26%;
+        height: 92.5%;
+    }
+
+    .resultado-incompleto{
+        transform: scale(0.9);
+    }
+    
+    .resultado-completo{
+        height: 80%;
+        overflow: auto;
+    }
+
+    .resultado-completo::-webkit-scrollbar{
+        width: 8px;
+        border: none;
+    }
+
+    .resultado-completo::-webkit-scrollbar-track{
+        background-color: var(--Light-blue-300);
+        border-radius: 50px;
+    }
+
+    .resultado-completo::-webkit-scrollbar-thumb{
+        background-color: var(--Light-blue-500);
+        border-radius: 10px;
+    }
+
+    .resultado img {
+        display: block;
+        transform: scale(0.8);
+        margin: 30px auto;
+    }
+
+    .resultado-aviso{
+        font-size: 25px;
+        margin-top: 80px;
+    }
+
+    .resultado-pedido{
+        font-size: 20px;
+    }
+
+    .boton-copiar{
+        margin: 0 0 10px;
+    }
+
+
 }

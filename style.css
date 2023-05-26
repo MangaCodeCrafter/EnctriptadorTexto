@@ -63,6 +63,17 @@ main {
     font-size: 15px;
 }
 
+@media screen and (min-width: 767px) {
+    .encriptar {
+        margin: 50px 0 40px;
+    }
+
+    .encriptar textarea {
+        width: 99%;
+        height: 550px;
+        font-size: 25px;
+    }
+}
 
 /* Información */
 
@@ -97,6 +108,14 @@ button{
     font-size: 15px;
     transition: 0.3s;
     cursor: pointer;
+}
+
+@media screen and (min-width: 767px) {
+    button {
+        width: 45%;
+        margin-left: 22px;
+        font-size: 20px;
+    }
 }
 
 .botones .boton-encriptar {
@@ -158,4 +177,27 @@ button:active {
 
 .boton-copiar:active{
     transform: scale(0.6);
+}
+
+@media screen and (min-width: 767px) {
+    .resultado{
+        position: relative;
+        text-align: center;
+    }
+
+    .resultado-aviso{
+        font-size: 30px;
+    }
+
+    .resultado-pedido{
+        font-size: 20px;
+    }
+
+    .boton-copiar{
+        transform: scale(0.85);
+    }
+
+    .boton-copiar:active{
+        transform: scale(0.75);
+    }
 }

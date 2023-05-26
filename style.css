@@ -1,0 +1,145 @@
+/* Generales */
+
+:root{
+    --Light-blue-100: #F3F5FC;
+    --Light-blue-200: #EFF1FA;
+    --Light-blue-300: #E9ECF8;
+    --Light-blue-400: #aab2d5;
+    --Light-blue-500: #757FB2;
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: var(--Light-blue-100);
+}
+
+
+/* Encabezado */
+
+
+header {
+    background-color: var(--Light-blue-300);
+    height: 96px;
+}
+
+.logo{
+position: absolute;
+left: 5%;
+top: 24px;
+}
+
+
+/* Cuerpo */
+
+
+main {
+    position: relative;
+    margin: 0 auto;
+}
+
+
+/* Area de escritura */
+
+
+.encriptar{
+    margin: 20px 0 10px;
+}
+
+.text{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.encriptar textarea {
+    position: relative;
+    border: 2px solid var(--Light-blue-400);
+    border-radius: 10px;
+    width: 97%;
+    height: 250px;
+    resize: none;
+    font-size: 15px;
+}
+
+
+/* Información */
+
+
+.informacion{
+    margin: 20px 0 10px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.informacion p {
+    display: inline-block;
+}
+
+
+/* Botones */
+
+
+.botones{
+    margin: 20px 0 10px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.botones button{
+    width: 100%;
+    height: 67px;
+    margin-top: 10px;
+    border-radius: 25px;
+    border: 2px solid var(--Light-blue-400);
+    background-color: var(--Light-blue-300);
+    font-size: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.botones .boton-encriptar {
+    background-color: var(--Light-blue-500);
+    border: 2px solid var(--Light-blue-500);
+    color: var(--Light-blue-100);
+}
+
+.botones .boton-desencriptar {
+    color: var(--Light-blue-500);
+    background-color: #FFFFFF;
+}
+
+.botones button:active {
+    transform: scale(0.9);
+}
+
+
+/* Resultado */
+
+
+.resultado{
+    margin: 20px auto;
+    width: 90%;
+    height: 100%;
+    border: 2px solid var(--Light-blue-400);
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.resultado-incompleto{
+    margin: 20px 10px;
+}
+
+.resultado-aviso{
+    margin: 30px 0;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+.resultado-pedido{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 15px;
+}

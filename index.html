@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Encriptador Alura</title>
 </head>
 <body>
     <header>
@@ -18,7 +19,7 @@
         <div class="responsive">
             <section class="encriptar">
                 <div class="text">
-                    <textarea name="" id=""></textarea>
+                    <textarea class="text-area" name="" id=""></textarea>
                 </div>
             </section>
     
@@ -30,12 +31,12 @@
             </section>
     
             <section class="botones">
-                <button class="boton-encriptar">Encriptar</button>
-                <button class="boton-desencriptar">Desencriptar</button>
+                <button class="boton-encriptar" onclick="btnEnctiprar()">Encriptar</button>
+                <button class="boton-desencriptar" onclick="btnDesenctiprar()">Desencriptar</button>
             </section>
         </div>
 
-         <section class="resultado">
+        <section class="resultado activador1">
             <div class="resultado-incompleto">
                 <img src="Imagenes/Muñeco.png" alt="Muñeco">
                 <p class="resultado-aviso">Ningún mensaje fue encontrado.</p>
@@ -43,14 +44,15 @@
             </div>
         </section> 
 
-<!--         <section class="resultado">
+        <section class="resultado activador2">
             <div class="resultado-completo">
-                <p class="resultado-pedido">Texto ejemplo.</p>
+                <p class="resultado-pedido" id="resultado-pedido"></p>
             </div>
-            <button class="boton-copiar">Copiar</button>
-        </section> -->
+            <button class="boton-copiar" onclick="copiarContenido()">Copiar</button>
+        </section>
     </main>
 
     <script src="https://kit.fontawesome.com/26977d18d5.js" crossorigin="anonymous"></script>
+    <Script src="app.js"></Script>
 </body>
 </html>

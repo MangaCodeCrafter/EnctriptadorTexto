@@ -38,9 +38,14 @@ top: 24px;
 main {
     position: relative;
     margin: 0 auto;
+    text-align: center;
 }
 
 @media screen and (min-width: 1439px) {
+    main{
+        text-align: left;
+    }
+
     .responsive{
         display: inline-block;
         width: 70%;
@@ -144,6 +149,7 @@ button:active {
 
 
 .resultado{
+    display: inline-block;
     margin: 20px auto;
     width: 90%;
     height: 100%;
@@ -213,6 +219,7 @@ button:active {
 }
 
 @media screen and (min-width: 1439px) {
+
     .resultado{
         display: inline-block;
         position: absolute;
@@ -265,4 +272,13 @@ button:active {
     }
 
 
+}
+
+
+.activador1 {
+    display: inline-block;
+}
+
+.activador2 {
+    display: none;
 }
